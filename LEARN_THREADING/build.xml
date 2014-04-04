@@ -1,0 +1,25 @@
+<project>
+
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+	<javac includeantruntime='false' srcdir="src" destdir="bin"/>
+    </target>
+
+    <target name="jar">
+        <jar destfile="LearnThreading.jar" basedir="bin">
+            <manifest>
+                <attribute name="Main-Class" value="pac.ThreadExperiments"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="LearnThreading.jar" fork="true"/>
+    </target>
+
+</project>
+
