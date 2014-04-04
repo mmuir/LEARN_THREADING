@@ -1,0 +1,12 @@
+When lock1 == lock2
+
+MyRunnable@1d1acd3 Waiting for lock...
+MyRunnable@1d1acd3 THIS CODE IS SYNCHRONIZED
+Waiting for 15 seconds
+MyRunnable@50d89c Waiting for lock...
+111111111111111
+MyRunnable@50d89c THIS CODE IS SYNCHRONIZED
+Waiting for 4 seconds
+MyRunnable@1d1acd3 relinquished lock
+2222
+MyRunnable@50d89c relinquished lock
